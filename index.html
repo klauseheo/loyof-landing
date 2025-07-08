@@ -494,46 +494,29 @@
             max-width: 600px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
+            padding: 60px 40px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #1a1a2e;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
+            text-align: center;
         }
 
         .submit-button {
-            width: 100%;
-            padding: 15px;
+            padding: 20px 60px;
             background: #e94560;
             color: white;
             border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
             font-weight: bold;
             cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.3);
         }
 
         .submit-button:hover {
             background: #d63447;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(233, 69, 96, 0.4);
         }
 
         /* Footer */
@@ -715,7 +698,7 @@
                         <li>✅ HD 고화질 영상</li>
                         <li>✅ 기본 편집 및 자막</li>
                     </ul>
-                    <a href="#contact" class="cta-button">시작하기</a>
+                    <a href="#contact" class="cta-button">상담 문의하기</a>
                 </div>
 
                 <div class="package-card popular">
@@ -734,7 +717,7 @@
                         <li>✅ FHD 프리미엄 화질</li>
                         <li>✅ 전문 편집 및 모션그래픽</li>
                     </ul>
-                    <a href="#contact" class="cta-button">인기 선택</a>
+                    <a href="#contact" class="cta-button">상담 문의하기</a>
                 </div>
 
                 <div class="package-card">
@@ -752,7 +735,7 @@
                         <li>✅ 4K 최고급 화질</li>
                         <li>✅ 시네마틱 편집 및 특수효과</li>
                     </ul>
-                    <a href="#contact" class="cta-button">프리미엄 선택</a>
+                    <a href="#contact" class="cta-button">상담 문의하기</a>
                 </div>
             </div>
         </div>
@@ -1070,50 +1053,18 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">지금 시작하면, 한 달 후 당신의 AI가 일합니다</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label>성함/회사명</label>
-                    <input type="text" placeholder="예: 김철수 / 로요프컴퍼니" required>
-                </div>
-                <div class="form-group">
-                    <label>업종/전문분야</label>
-                    <select required>
-                        <option value="">선택해주세요</option>
-                        <option value="medical">의료/헬스케어</option>
-                        <option value="legal">법률/세무/노무</option>
-                        <option value="business">비즈니스/컨설팅</option>
-                        <option value="education">교육/강의</option>
-                        <option value="retail">자영업/소상공인</option>
-                        <option value="company">소규모 기업</option>
-                        <option value="creator">크리에이터/프리랜서</option>
-                        <option value="other">기타</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>이메일</label>
-                    <input type="email" required>
-                </div>
-                <div class="form-group">
-                    <label>연락처</label>
-                    <input type="tel" required>
-                </div>
-                <div class="form-group">
-                    <label>관심 패키지</label>
-                    <select required>
-                        <option value="">선택해주세요</option>
-                        <option value="basic">베이직 AI (199만원)</option>
-                        <option value="pro">프로 AI (299만원)</option>
-                        <option value="master">마스터 AI (399만원)</option>
-                        <option value="custom">맞춤 상담 희망</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>브랜딩 목표</label>
-                    <textarea rows="4" placeholder="어떤 이미지로 브랜딩하고 싶으신가요? 달성하고 싶은 목표를 알려주세요."></textarea>
-                </div>
-                <button type="submit" class="submit-button">무료 AI 데모 영상 받기</button>
-            </form>
+            <h2 class="section-title">지금 바로 당신의 온라인 자산 구축을 시작하세요</h2>
+            <div class="contact-form" style="text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 30px; color: #666;">
+                    전문 컨설턴트가 당신의 브랜딩 목표를 듣고<br>
+                    최적의 솔루션을 제안해드립니다
+                </p>
+                <button type="button" class="submit-button" onclick="window.open('https://forms.gle/3SDVm5Lrj5jEddhk6')">무료 상담 문의하기</button>
+                <!-- 구글폼 ID를 실제 폼 ID로 교체해주세요 -->
+                <p style="margin-top: 20px; color: #666; font-size: 0.9rem;">
+                    ※ 클릭하시면 구글폼 상담 신청 페이지로 이동합니다
+                </p>
+            </div>
         </div>
     </section>
 
@@ -1128,13 +1079,6 @@
     </footer>
 
     <script>
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('신청이 완료되었습니다! AI 데모 영상과 함께 24시간 내에 연락드리겠습니다.');
-            this.reset();
-        });
-
         // Smooth scroll
         document.querySelectorAll('a[href="#contact"]').forEach(function(link) {
             link.addEventListener('click', function(e) {
